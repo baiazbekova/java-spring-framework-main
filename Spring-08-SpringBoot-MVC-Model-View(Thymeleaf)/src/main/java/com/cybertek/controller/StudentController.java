@@ -16,8 +16,8 @@ import java.util.List;
 @Controller
 @RequestMapping("/student")
 public class StudentController {
-    @GetMapping ("/welcome")
-    public String homePage(Model model){
+    @GetMapping("/welcome")
+    public String homePage(Model model) {
 
         model.addAttribute("name", "AIGERIM BAIAZBEKOVA"); //binding to html
         model.addAttribute("course", "MVC");
@@ -28,7 +28,7 @@ public class StudentController {
 
         //create  random student id and show it in your UI
         int id = 123;
-        model.addAttribute("id",id);
+        model.addAttribute("id", id);
 
 
         List<Integer> numbers = new ArrayList<>();
@@ -43,19 +43,17 @@ public class StudentController {
         model.addAttribute("bday", bday);
 
 
-        Student student = new Student (1, "Mike", "Smith");
+        Student student = new Student(1, "Mike", "Smith");
         model.addAttribute("student", student);
-
 
 
         return "student/welcome";
     }
 
     @GetMapping("/register")
-    public String homePage2(){
+    public String homePage2() {
         return "student/register";
     }
-
 
 
 }

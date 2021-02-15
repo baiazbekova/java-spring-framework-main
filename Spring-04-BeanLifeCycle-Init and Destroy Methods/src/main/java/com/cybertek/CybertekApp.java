@@ -16,7 +16,7 @@ public class CybertekApp {
         //Weekly Teaching Hours: 20
 
 
-        ((ClassPathXmlApplicationContext)container).close(); //executing destroy method
+        ((ClassPathXmlApplicationContext) container).close(); //executing destroy method
 
     }
 }

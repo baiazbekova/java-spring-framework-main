@@ -6,11 +6,11 @@
 </head>
 <body>
 
-<div align = "center">
+<div align="center">
 
     <form action="/mentor/confirm" method="post" th:object="${mentor}">
         <label>First Name:</label>
-        <input type = "text" id="firstName" th:field="*{firstName}"> <br>
+        <input type="text" id="firstName" th:field="*{firstName}"> <br>
 
         <label>Last Name:</label>
         <input type="text" id="lastName" th:field="*{lastName}"><br>
@@ -22,8 +22,8 @@
         <input type="checkbox" th:field="*{graduated}"><br>
 
         <label>Gender:</label>
-        <input type = "radio" value="Male" th:field="*{gender}">Male
-        <input type = "radio" value="Female" th:field="*{gender}">Female<br>
+        <input type="radio" value="Male" th:field="*{gender}">Male
+        <input type="radio" value="Female" th:field="*{gender}">Female<br>
 
         <label>Bath Number:</label>
         <select th:field="*{batch}">

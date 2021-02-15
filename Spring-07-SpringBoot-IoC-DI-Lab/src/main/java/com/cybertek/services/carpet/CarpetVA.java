@@ -15,12 +15,11 @@ public class CarpetVA implements Carpet {
     //dummy data that will run one time first time
     private static final Map<City, BigDecimal> sqPriceForCity = new HashMap<>();
 
-    static{
+    static {
         sqPriceForCity.put(City.MCLean, new BigDecimal("4.32"));
         sqPriceForCity.put(City.ARLINGTON, new BigDecimal("2.98"));
         sqPriceForCity.put(City.FAIRFAX, new BigDecimal("5.02"));
     }
-
 
 
     @Override
@@ -33,9 +32,9 @@ public class CarpetVA implements Carpet {
         //below is stream
         //Optional will return exception but it will say that there is no value. if there was no Optional, it would return null pointer exception
         //when there is null pointer exception, you cant understand if the obj is not created or there is no value
-       Optional<Map.Entry <City,BigDecimal>> collect = sqPriceForCity.entrySet().stream().filter(x -> x.getKey() == city).findFirst();
+        Optional<Map.Entry<City, BigDecimal>> collect = sqPriceForCity.entrySet().stream().filter(x -> x.getKey() == city).findFirst();
 
-       return collect.isPresent() ? collect.get().getValue() : defaultValue;
+        return collect.isPresent() ? collect.get().getValue() : defaultValue;
 
     }
 }

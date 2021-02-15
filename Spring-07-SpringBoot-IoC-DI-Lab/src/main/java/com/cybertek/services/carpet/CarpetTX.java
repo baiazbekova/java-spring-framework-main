@@ -31,7 +31,7 @@ public class CarpetTX implements Carpet {
         //below is stream
         //Optional will return exception but it will say that there is no value. if there was no Optional, it would return null pointer exception
         //when there is null pointer exception, you cant understand if the obj is not created or there is no value
-        Optional<Map.Entry <City,BigDecimal>> collect = sqPriceForCity.entrySet().stream().filter(x -> x.getKey() == city).findFirst();
+        Optional<Map.Entry<City, BigDecimal>> collect = sqPriceForCity.entrySet().stream().filter(x -> x.getKey() == city).findFirst();
 
         return collect.isPresent() ? collect.get().getValue() : defaultValue;
 

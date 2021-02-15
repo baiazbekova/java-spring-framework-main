@@ -12,7 +12,7 @@ public class CybertekApp {
         //implementation class to  create container
         ApplicationContext container = new AnnotationConfigApplicationContext(CybertekAppConfig.class);
 
-        Course course = container.getBean("java",Course.class);
+        Course course = container.getBean("java", Course.class);
 
         System.out.println(course.toString());
 

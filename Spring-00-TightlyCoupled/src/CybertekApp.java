@@ -5,10 +5,10 @@ public class CybertekApp {
         FullTimeMentor fullTimeMentor = new FullTimeMentor();
         PartTimeMentor partTimeMentor = new PartTimeMentor();
 
-        Mentor mentor =  new Mentor(fullTimeMentor, partTimeMentor);
+        Mentor mentor = new Mentor(fullTimeMentor, partTimeMentor);
         mentor.manageAccount();
 
-        Mentor mentor1 =  new Mentor (fullTimeMentor, partTimeMentor);
+        Mentor mentor1 = new Mentor(fullTimeMentor, partTimeMentor);
         mentor1.manageAccount();
 
     }

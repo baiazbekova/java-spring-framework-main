@@ -7,7 +7,21 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-01-SpringContainer/Spring-01-SpringContainer.iml" filepath="$PROJECT_DIR$/Spring-01-SpringContainer/Spring-01-SpringContainer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-02-DI-ConstructorInjection/Spring-02-DI-ConstructorInjection.iml" filepath="$PROJECT_DIR$/Spring-02-DI-ConstructorInjection/Spring-02-DI-ConstructorInjection.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-02-DI-SetterInjection/Spring-02-DI-SetterInjection.iml" filepath="$PROJECT_DIR$/Spring-02-DI-SetterInjection/Spring-02-DI-SetterInjection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-03-BeanScope-Singleton-Prototype/Spring-03-BeanScope-Singleton-Prototype.iml" filepath="$PROJECT_DIR$/Spring-03-BeanScope-Singleton-Prototype/Spring-03-BeanScope-Singleton-Prototype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-04-BeanLifeCycle-Init and Destroy Methods/Spring-04-BeanLifeCycle-Init and Destroy Methods.iml" filepath="$PROJECT_DIR$/Spring-04-BeanLifeCycle-Init and Destroy Methods/Spring-04-BeanLifeCycle-Init and Destroy Methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-05-JavaAnnotations-Autowired/Spring-05-JavaAnnotations-Autowired.iml" filepath="$PROJECT_DIR$/Spring-05-JavaAnnotations-Autowired/Spring-05-JavaAnnotations-Autowired.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-05-JavaAnnotations-Component/Spring-05-JavaAnnotations-Component.iml" filepath="$PROJECT_DIR$/Spring-05-JavaAnnotations-Component/Spring-05-JavaAnnotations-Component.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-05-JavaAnnotations-Qualifier/Spring-05-JavaAnnotations-Qualifier.iml" filepath="$PROJECT_DIR$/Spring-05-JavaAnnotations-Qualifier/Spring-05-JavaAnnotations-Qualifier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-05-JavaAnnotations-Value/Spring-05-JavaAnnotations-Value.iml" filepath="$PROJECT_DIR$/Spring-05-JavaAnnotations-Value/Spring-05-JavaAnnotations-Value.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-06-JavaCode-Configuration/Spring-06-JavaCode-Configuration.iml" filepath="$PROJECT_DIR$/Spring-06-JavaCode-Configuration/Spring-06-JavaCode-Configuration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-06-JavaCode-PostContsruct-PreDestroy/Spring-06-JavaCode-PostContsruct-PreDestroy.iml" filepath="$PROJECT_DIR$/Spring-06-JavaCode-PostContsruct-PreDestroy/Spring-06-JavaCode-PostContsruct-PreDestroy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToOne/Spring-09-ORM-Mapping-OneToOne.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToOne/Spring-09-ORM-Mapping-OneToOne.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-TableCreation/Spring-09-ORM-TableCreation.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-TableCreation/Spring-09-ORM-TableCreation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-07-SpringBoot-Demo/cybertek (1).iml" filepath="$PROJECT_DIR$/Spring-07-SpringBoot-Demo/cybertek (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-07-SpringBoot-IoC-DI-Lab/cybertek (2).iml" filepath="$PROJECT_DIR$/Spring-07-SpringBoot-IoC-DI-Lab/cybertek (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/cybertek (3).iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/cybertek (3).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Form/cybertek (4).iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Form/cybertek (4).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/cybertek (5).iml" filepath="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/cybertek (5).iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-framework.iml" filepath="$PROJECT_DIR$/.idea/spring-framework.iml" />
     </modules>
   </component>

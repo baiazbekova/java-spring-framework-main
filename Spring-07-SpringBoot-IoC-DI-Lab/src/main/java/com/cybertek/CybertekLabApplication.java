@@ -11,7 +11,7 @@ public class CybertekLabApplication {
 
     public static void main(String[] args) throws Exception {
 
-       ApplicationContext container =  SpringApplication.run(CybertekLabApplication.class, args);
+        ApplicationContext container = SpringApplication.run(CybertekLabApplication.class, args);
 
         Calculator calculator = container.getBean("calculator", Calculator.class);
 

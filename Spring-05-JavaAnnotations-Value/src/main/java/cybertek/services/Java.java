@@ -21,20 +21,9 @@ public class Java implements Course {
     private String[] days;
 
     @Override
-    public String toString(){
-        return "Java{"+ "batch='"+ batch + '\'' + ", days=" + Arrays.toString(days)+ '}';
+    public String toString() {
+        return "Java{" + "batch='" + batch + '\'' + ", days=" + Arrays.toString(days) + '}';
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
     //field injection
@@ -49,7 +38,7 @@ public class Java implements Course {
 
     @Override
     public void getTeachingHours() {
-        System.out.println("Weekly teaching hours for Java is "+ (20+ extraSessions.getHours()));
+        System.out.println("Weekly teaching hours for Java is " + (20 + extraSessions.getHours()));
 
     }
 }

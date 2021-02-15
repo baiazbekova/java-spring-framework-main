@@ -9,18 +9,18 @@ import java.time.LocalTime;
 import java.util.Date;
 
 @Entity
-@Table(name="students")
+@Table(name = "students")
 public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column (name = "studentFirstName")
+    @Column(name = "studentFirstName")
     private String firstName;
-    @Column (name = "studentLastName")
+    @Column(name = "studentLastName")
     private String lastName;
-    @Column (name = "studentEmail")
+    @Column(name = "studentEmail")
     private String email;
 
     @Transient
@@ -32,11 +32,11 @@ public class Student {
     @Temporal(TemporalType.TIMESTAMP)
     private Date birthDateTime;
 
-    @Column (columnDefinition = "DATE")
+    @Column(columnDefinition = "DATE")
     private LocalDate localDate;
-    @Column (columnDefinition = "TIME")
+    @Column(columnDefinition = "TIME")
     private LocalTime localTime;
-    @Column (columnDefinition = "TIMESTAMP")
+    @Column(columnDefinition = "TIMESTAMP")
     private LocalDateTime localDateTime;
 
     @Enumerated(EnumType.STRING)

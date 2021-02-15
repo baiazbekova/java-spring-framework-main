@@ -6,5 +6,5 @@ import java.math.BigDecimal;
 
 public interface Carpet {
 
-    BigDecimal getSqFtPrice (City city);
+    BigDecimal getSqFtPrice(City city);
 }

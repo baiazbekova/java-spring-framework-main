@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping ("/employee")
+@RequestMapping("/employee")
 public class EmployeeController {
 
-    @GetMapping  ("/register")
-    public String employeeCreate(Model model){
+    @GetMapping("/register")
+    public String employeeCreate(Model model) {
 
         model.addAttribute("employee", new Employee());
         model.addAttribute("stateList", DataGenerator.getStateList());
@@ -22,8 +22,8 @@ public class EmployeeController {
         return "/templates/employee/employee-create";
     }
 
-    @PostMapping ("/list")
-    public String employeeList (){
+    @PostMapping("/list")
+    public String employeeList() {
 
         return "/templates/employee/employee-list";
     }

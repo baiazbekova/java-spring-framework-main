@@ -10,6 +10,21 @@
         <option value="$PROJECT_DIR$/Spring-02-DI-ConstructorInjection/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-02-DI-SetterInjection/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-09-ORM-TableCreation/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-07-SpringBoot-Demo/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Form/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-05-JavaAnnotations-Value/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-07-SpringBoot-IoC-DI-Lab/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-06-JavaCode-Configuration/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-05-JavaAnnotations-Autowired/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-05-JavaAnnotations-Component/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-05-JavaAnnotations-Qualifier/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Controller/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-03-BeanScope-Singleton-Prototype/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-06-JavaCode-PostContsruct-PreDestroy/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-08-SpringBoot-MVC-Model-View(Thymeleaf)/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-04-BeanLifeCycle-Init and Destroy Methods/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToOne/pom.xml" />
       </list>
     </option>
   </component>

@@ -11,7 +11,7 @@ public class Java implements Course {
 
     @Value("${instructor}")
     private String instructorName;
-    
+
 
     private ExtraSessions extraSessions;
 

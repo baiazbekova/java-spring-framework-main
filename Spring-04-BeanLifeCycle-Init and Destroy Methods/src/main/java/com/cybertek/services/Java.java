@@ -11,10 +11,11 @@ public class Java implements Course {
 
 
     //init method
-    public void myInitMethod(){
+    public void myInitMethod() {
         System.out.println("executing init method");
     }
-    public void myDestroymethod(){
+
+    public void myDestroymethod() {
         System.out.println("executing destroy method");
     }
 

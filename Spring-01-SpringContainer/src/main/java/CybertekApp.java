@@ -17,7 +17,7 @@ public class CybertekApp {
 
         //2nd way of creating container- Application context
         ApplicationContext container = new ClassPathXmlApplicationContext("config.xml");
-        Mentor mentor1 = (Mentor)container.getBean("partTimeMentor");
+        Mentor mentor1 = (Mentor) container.getBean("partTimeMentor");
         mentor1.createAccount();
 
         //3rd way of creating container, returning whatever you need from obj

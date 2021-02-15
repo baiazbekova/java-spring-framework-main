@@ -10,16 +10,16 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-@ComponentScan ("com.cybertek")  //spring will scan and then create objects
+@ComponentScan("com.cybertek")  //spring will scan and then create objects
 public class CybertekAppConfig {
 
     @Bean
-    public Java java(){
+    public Java java() {
         return new Java(extraSessions());
     }
 
     @Bean
-    public Selenium selenium(){
+    public Selenium selenium() {
         return new Selenium();
     }
 
@@ -31,7 +31,7 @@ public class CybertekAppConfig {
 
     //2nd way = more loosely coupled way
     @Bean
-    public ExtraSessions extraSessions(){ //ExtraSessions ex = new OfficeHours();
+    public ExtraSessions extraSessions() { //ExtraSessions ex = new OfficeHours();
         return new OfficeHours();
     }
 

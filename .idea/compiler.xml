@@ -6,22 +6,59 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring-02-DI-SetterInjection" />
-        <module name="Spring-01-SpringContainer" />
+        <module name="Spring-05-JavaAnnotations-Autowired" />
+        <module name="Spring-05-JavaAnnotations-Value" />
         <module name="Spring-09-ORM-TableCreation" />
+        <module name="Spring-06-JavaCode-PostContsruct-PreDestroy" />
+        <module name="Spring-02-DI-SetterInjection" />
+        <module name="Spring-06-JavaCode-Configuration" />
+        <module name="spring-framework" />
+        <module name="cybertek (1)" />
+        <module name="cybertek (2)" />
+        <module name="cybertek (5)" />
+        <module name="Spring-01-SpringContainer" />
+        <module name="cybertek (3)" />
+        <module name="cybertek (4)" />
+        <module name="Spring-05-JavaAnnotations-Component" />
+        <module name="Spring-03-BeanScope-Singleton-Prototype" />
+        <module name="Spring-09-ORM-Mapping-OneToOne" />
         <module name="Spring-02-DI-ConstructorInjection" />
+        <module name="Spring-04-BeanLifeCycle-Init and Destroy Methods" />
+        <module name="Spring-05-JavaAnnotations-Qualifier" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cybertek (1)" target="11" />
+      <module name="cybertek (2)" target="11" />
+      <module name="cybertek (3)" target="11" />
+      <module name="cybertek (4)" target="11" />
+      <module name="cybertek (5)" target="11" />
       <module name="Spring-01-SpringContainer" target="1.8" />
       <module name="Spring-02-DI-ConstructorInjection" target="1.8" />
       <module name="Spring-02-DI-SetterInjection" target="6" />
+      <module name="Spring-03-BeanScope-Singleton-Prototype" target="6" />
+      <module name="Spring-04-BeanLifeCycle-Init and Destroy Methods" target="6" />
+      <module name="Spring-05-JavaAnnotations-Autowired" target="6" />
+      <module name="Spring-05-JavaAnnotations-Component" target="6" />
+      <module name="Spring-05-JavaAnnotations-Qualifier" target="6" />
+      <module name="Spring-05-JavaAnnotations-Value" target="6" />
+      <module name="Spring-06-JavaCode-Configuration" target="1.8" />
+      <module name="Spring-06-JavaCode-PostContsruct-PreDestroy" target="1.8" />
+      <module name="Spring-09-ORM-Mapping-OneToOne" target="11" />
       <module name="Spring-09-ORM-TableCreation" target="11" />
+      <module name="spring-framework" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Spring-09-ORM-Mapping-OneToOne" options="-parameters" />
       <module name="Spring-09-ORM-TableCreation" options="-parameters" />
+      <module name="cybertek (1)" options="-parameters" />
+      <module name="cybertek (2)" options="-parameters" />
+      <module name="cybertek (3)" options="-parameters" />
+      <module name="cybertek (4)" options="-parameters" />
+      <module name="cybertek (5)" options="-parameters" />
+      <module name="spring-framework" options="-parameters" />
     </option>
   </component>
 </project>
