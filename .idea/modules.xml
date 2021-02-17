@@ -15,6 +15,8 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-05-JavaAnnotations-Value/Spring-05-JavaAnnotations-Value.iml" filepath="$PROJECT_DIR$/Spring-05-JavaAnnotations-Value/Spring-05-JavaAnnotations-Value.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-06-JavaCode-Configuration/Spring-06-JavaCode-Configuration.iml" filepath="$PROJECT_DIR$/Spring-06-JavaCode-Configuration/Spring-06-JavaCode-Configuration.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-06-JavaCode-PostContsruct-PreDestroy/Spring-06-JavaCode-PostContsruct-PreDestroy.iml" filepath="$PROJECT_DIR$/Spring-06-JavaCode-PostContsruct-PreDestroy/Spring-06-JavaCode-PostContsruct-PreDestroy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToOne/Spring-09-ORM-Mapping-ManyToOne.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToOne/Spring-09-ORM-Mapping-ManyToOne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToMany/Spring-09-ORM-Mapping-OneToMany.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToMany/Spring-09-ORM-Mapping-OneToMany.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToOne/Spring-09-ORM-Mapping-OneToOne.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToOne/Spring-09-ORM-Mapping-OneToOne.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-ORM-TableCreation/Spring-09-ORM-TableCreation.iml" filepath="$PROJECT_DIR$/Spring-09-ORM-TableCreation/Spring-09-ORM-TableCreation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-07-SpringBoot-Demo/cybertek (1).iml" filepath="$PROJECT_DIR$/Spring-07-SpringBoot-Demo/cybertek (1).iml" />

@@ -25,6 +25,8 @@
         <option value="$PROJECT_DIR$/Spring-04-BeanLifeCycle-Init and Destroy Methods/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToOne/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-09-ORM-Mapping-ManyToOne/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-09-ORM-Mapping-OneToMany/pom.xml" />
       </list>
     </option>
   </component>
