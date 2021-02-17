@@ -1,8 +1,15 @@
 package com.cybertek.entity;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.util.List;
 
+@Getter
+@Setter
+@NoArgsConstructor
 @Entity
 public class Person {
 
@@ -13,10 +20,16 @@ public class Person {
     private String firstName;
     private String lastName;
 
-    @OneToMany (mappedBy = "person")
+    @OneToMany (cascade = CascadeType.ALL)
+    @JoinColumn(name="person_id")
     private List <Address> addresses;
 //    @OneToMany
 //    @JoinColumn ("person_id")
 //    private List<Address> address; //collection
 
+
+    public Person( String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 }
