@@ -20,10 +20,11 @@ public class Person {
     private String firstName;
     private String lastName;
 
-    @OneToMany (cascade = CascadeType.ALL)
-    @JoinColumn(name="person_id")
+    @OneToMany (mappedBy = "person")
     private List <Address> addresses;
-//    @OneToMany
+
+
+//    @OneToMany(cascade = CascadeType.ALL)
 //    @JoinColumn ("person_id")
 //    private List<Address> address; //collection
 
