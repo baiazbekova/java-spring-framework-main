@@ -2,11 +2,16 @@ package com.cybertek.bootstrap;
 
 import com.cybertek.entity.Post;
 import com.cybertek.entity.Tag;
+import com.cybertek.repository.PostRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
 public class DataGenerator implements CommandLineRunner {
+
+    @Autowired
+    PostRepository postRepository;
     @Override
     public void run(String... args) throws Exception {
 
@@ -20,9 +25,13 @@ public class DataGenerator implements CommandLineRunner {
         post.getTags().add(tag1);
 
         tag.getPosts().add(post);
-        tag.getPosts().add(post1);
+        tag1.getPosts().add(post1);
 
-        tag.getPosts()
+        tag.getPosts().add(post1);
+        post1.getTags().add(tag);
+
+        postRepository.save(post);
+        postRepository.save(post1);
 
     }
 }
