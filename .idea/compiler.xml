@@ -11,6 +11,7 @@
         <module name="Spring-05-JavaAnnotations-Value" />
         <module name="Spring-09-ORM-TableCreation" />
         <module name="Spring-09-ORM-Mapping-ManyToOne" />
+        <module name="Spring-09-ORM-Mapping-ManyToMany" />
         <module name="Spring-06-JavaCode-PostContsruct-PreDestroy" />
         <module name="Spring-02-DI-SetterInjection" />
         <module name="Spring-06-JavaCode-Configuration" />
@@ -47,6 +48,7 @@
       <module name="Spring-05-JavaAnnotations-Value" target="6" />
       <module name="Spring-06-JavaCode-Configuration" target="1.8" />
       <module name="Spring-06-JavaCode-PostContsruct-PreDestroy" target="1.8" />
+      <module name="Spring-09-ORM-Mapping-ManyToMany" target="11" />
       <module name="Spring-09-ORM-Mapping-ManyToOne" target="11" />
       <module name="Spring-09-ORM-Mapping-OneToMany" target="11" />
       <module name="Spring-09-ORM-Mapping-OneToOne" target="11" />
@@ -56,6 +58,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Spring-09-ORM-Mapping-ManyToMany" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-ManyToOne" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-OneToMany" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-OneToOne" options="-parameters" />
