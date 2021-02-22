@@ -29,6 +29,7 @@
         <module name="Spring-02-DI-ConstructorInjection" />
         <module name="Spring-04-BeanLifeCycle-Init and Destroy Methods" />
         <module name="Spring-05-JavaAnnotations-Qualifier" />
+        <module name="Spring-09-ORM-CinemaLab" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -48,6 +49,7 @@
       <module name="Spring-05-JavaAnnotations-Value" target="6" />
       <module name="Spring-06-JavaCode-Configuration" target="1.8" />
       <module name="Spring-06-JavaCode-PostContsruct-PreDestroy" target="1.8" />
+      <module name="Spring-09-ORM-CinemaLab" target="11" />
       <module name="Spring-09-ORM-Mapping-ManyToMany" target="11" />
       <module name="Spring-09-ORM-Mapping-ManyToOne" target="11" />
       <module name="Spring-09-ORM-Mapping-OneToMany" target="11" />
@@ -58,6 +60,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Spring-09-ORM-CinemaLab" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-ManyToMany" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-ManyToOne" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-OneToMany" options="-parameters" />
