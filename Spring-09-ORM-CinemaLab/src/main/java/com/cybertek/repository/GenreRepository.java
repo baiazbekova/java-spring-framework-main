@@ -1,8 +1,9 @@
 package com.cybertek.repository;
 
+import com.cybertek.entity.Genre;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.Repository;
+import org.springframework.stereotype.Repository;
 
-@org.springframework.stereotype.Repository
-public interface GenreRepository extends JpaRepository<Repository, Long> {
+@Repository
+public interface GenreRepository extends JpaRepository<Genre, Long> {
 }
