@@ -26,5 +26,7 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
     //display all employees who have been hired btw '' and '' dates.
     List<Employee> findByHireDateBetween(LocalDate startDate, LocalDate endDate);
 
+    //display all employees who dont have email
+    List<Employee> findByEmailIsNull ();
 
 }
