@@ -36,16 +36,21 @@ public class DerivedqueryApplication {
 //        System.out.println("---------Regions End------------");
 
 
-//        System.out.println("---------Departments start------------");
+    }
+    @PostConstruct
+    public void testDepartments(){
+        //System.out.println("---------Departments start------------");
 //        System.out.println("findAllByDepartment "+ departmentRepository.findAllByDepartment("Furniture"));
 //        System.out.println("findAllByDepartment "+ departmentRepository.findAllByDepartment("Health"));
 //        System.out.println("---------Departments end------------");
-
+    }
+    @PostConstruct
+    public void testEmployees(){
         System.out.println("---------Employees start------------");
-        System.out.println(employeeRepository.findByFirstNameIsNot("Sydney"));
+        //System.out.println(employeeRepository.findByFirstNameIsNot("Sydney"));
+        System.out.println(employeeRepository.findBySalaryGreaterThan(14000));
 
         System.out.println("---------Employees end------------");
-
 
     }
 }
