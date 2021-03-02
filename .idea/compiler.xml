@@ -8,29 +8,30 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Spring-05-JavaAnnotations-Autowired" />
-        <module name="Spring-05-JavaAnnotations-Value" />
+        <module name="Spring-09-ORM-Mapping-JPQL-NamedQueries" />
         <module name="Spring-09-ORM-TableCreation" />
         <module name="Spring-09-ORM-Mapping-ManyToOne" />
-        <module name="Spring-09-ORM-Mapping-ManyToMany" />
-        <module name="Spring-09-ORM-DerivedQueries" />
         <module name="Spring-06-JavaCode-PostContsruct-PreDestroy" />
-        <module name="Spring-02-DI-SetterInjection" />
         <module name="Spring-06-JavaCode-Configuration" />
-        <module name="spring-framework" />
         <module name="cybertek (1)" />
-        <module name="cybertek (2)" />
-        <module name="cybertek (5)" />
         <module name="Spring-01-SpringContainer" />
-        <module name="cybertek (3)" />
         <module name="cybertek (4)" />
-        <module name="Spring-05-JavaAnnotations-Component" />
         <module name="Spring-03-BeanScope-Singleton-Prototype" />
-        <module name="Spring-09-ORM-Mapping-OneToOne" />
         <module name="Spring-09-ORM-Mapping-OneToMany" />
         <module name="Spring-02-DI-ConstructorInjection" />
+        <module name="Spring-09-ORM-CinemaLab" />
+        <module name="Spring-05-JavaAnnotations-Value" />
+        <module name="Spring-09-ORM-Mapping-ManyToMany" />
+        <module name="Spring-09-ORM-DerivedQueries" />
+        <module name="Spring-02-DI-SetterInjection" />
+        <module name="spring-framework" />
+        <module name="cybertek (2)" />
+        <module name="cybertek (5)" />
+        <module name="cybertek (3)" />
+        <module name="Spring-05-JavaAnnotations-Component" />
+        <module name="Spring-09-ORM-Mapping-OneToOne" />
         <module name="Spring-04-BeanLifeCycle-Init and Destroy Methods" />
         <module name="Spring-05-JavaAnnotations-Qualifier" />
-        <module name="Spring-09-ORM-CinemaLab" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -52,6 +53,7 @@
       <module name="Spring-06-JavaCode-PostContsruct-PreDestroy" target="1.8" />
       <module name="Spring-09-ORM-CinemaLab" target="11" />
       <module name="Spring-09-ORM-DerivedQueries" target="11" />
+      <module name="Spring-09-ORM-Mapping-JPQL-NamedQueries" target="11" />
       <module name="Spring-09-ORM-Mapping-ManyToMany" target="11" />
       <module name="Spring-09-ORM-Mapping-ManyToOne" target="11" />
       <module name="Spring-09-ORM-Mapping-OneToMany" target="11" />
@@ -64,6 +66,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Spring-09-ORM-CinemaLab" options="-parameters" />
       <module name="Spring-09-ORM-DerivedQueries" options="-parameters" />
+      <module name="Spring-09-ORM-Mapping-JPQL-NamedQueries" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-ManyToMany" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-ManyToOne" options="-parameters" />
       <module name="Spring-09-ORM-Mapping-OneToMany" options="-parameters" />
