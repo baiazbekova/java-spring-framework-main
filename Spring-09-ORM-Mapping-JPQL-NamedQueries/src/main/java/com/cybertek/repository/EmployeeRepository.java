@@ -2,10 +2,12 @@ package com.cybertek.repository;
 
 import com.cybertek.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import javax.transaction.Transactional;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
@@ -29,8 +31,8 @@ public interface EmployeeRepository extends JpaRepository <Employee,Long> {
     Employee getEmployeeBySalary(@Param("salary") int salary);
 
     //multiple names parameters
-    @Query ("select e from Employee e where e.firstName=: name OR e.salary=:salary")
-    List<Employee> getEmployeeByFirstNameOrSalary(@Param("name") String name, @Param("salary") int salary);
+    //@Query ("select e from Employee e where e.firstName=: name OR e.salary=:salary")
+   // List<Employee> getEmployeeByFirstNameOrSalary(@Param("name") String name, @Param("salary") int salary);
 
 
     //not equal
@@ -77,5 +79,13 @@ public interface EmployeeRepository extends JpaRepository <Employee,Long> {
     @Query (value="select * from employees where salary = ?1", nativeQuery = true)
     List<Employee> readEmployeeBySalary(int salary);
 
+    //DDL
+    @Modifying
+    @Transactional
+    @Query ("update Employee e set e.email = 'admin@email.com' where e.id=:id")
+    void updateEmployeeJPQL(@Param("id")Integer id);
+
+    @Query(value="update employees SET email='admin@gmail.com' where id=:id", nativeQuery=true)
+    void updateEmployeeNativeQuery(@Param("id") Integer id);
 
 }

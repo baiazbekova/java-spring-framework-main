@@ -18,8 +18,9 @@ public class JpqlApplication {
 
     @PostConstruct
     public void testEmployee() {
-        System.out.println(employeeRepository.getEmployeeSalary());
-        System.out.println(employeeRepository.getEmployeeByEmail("baiazbekova@gmail.com").get());
+        //System.out.println(employeeRepository.getEmployeeSalary());
+        //System.out.println(employeeRepository.getEmployeeByEmail("baiazbekova@gmail.com").get());
+        employeeRepository.updateEmployeeJPQL(1);
     }
 
 }
