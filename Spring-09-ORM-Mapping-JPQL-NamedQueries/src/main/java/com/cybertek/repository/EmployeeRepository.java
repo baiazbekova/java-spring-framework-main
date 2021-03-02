@@ -90,4 +90,8 @@ public interface EmployeeRepository extends JpaRepository <Employee,Long> {
     @Query(value="update employees SET email='admin@gmail.com' where id=:id", nativeQuery=true)
     void updateEmployeeNativeQuery(@Param("id") Integer id);
 
+    //Named query
+    List<Employee> retrieveEmployeeSalaryGreaterThan(Integer salary);
+
+
 }
