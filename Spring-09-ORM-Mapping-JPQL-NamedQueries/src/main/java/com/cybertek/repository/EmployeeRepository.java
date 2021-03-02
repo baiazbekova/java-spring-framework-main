@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -47,5 +48,21 @@ public interface EmployeeRepository extends JpaRepository <Employee,Long> {
     //greater than
     @Query ("select e from Employee e where e.salary>?1")
     List<Employee> getEmployeeBySalaryMoreThan (int salary);
+
+    //between
+    @Query("select e from Employee e where e.salary BETWEEN ?1 AND ?2")
+    List<Employee> getEmployeeBySalaryIsBetween(int salary1, int salary2);
+
+    //before
+    @Query("select e from Employee e where e.hireDate > ?1")
+    List<Employee> getEmployeeByHireDateBefore(LocalDate date);
+
+    //null
+    @Query("select e from Employee e where e.email IS NULL ")
+    List<Employee> getEmployeeByEmailIsNull();
+
+    //notNull
+    @Query ("select e from Employee e where e.email is not NULL")
+    List<Employee> getEmployeeByEmailIsNotNull();
 
 }
