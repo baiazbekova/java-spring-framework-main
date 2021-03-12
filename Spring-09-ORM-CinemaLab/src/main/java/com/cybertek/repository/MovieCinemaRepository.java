@@ -44,7 +44,13 @@ public interface MovieCinemaRepository extends JpaRepository <MovieCinema, Long>
 
 // ------------------- Native QUERIES ------------------- //
 //Write a native query to count all movie cinemas by cinema id
-
+@Query(value = "select count (*) from movie_cinema where cinema_id = ?1", nativeQuery = true)
+    Long countByCinemaIDNativeQuery(Long cinemaId);
 
 //Write a native query that returns all movie cinemas by location name
+    @Query(value = "select * from movie_cinema JOIN cinema c on c.id = movie_cinema.cinema_id" +
+            " JOIN location l on c.location_id=l.location_id where l.name =?1", nativeQuery = true)
+    List<MovieCinema> retrieveAllByLocationName(String locationName);
+
+
 }
