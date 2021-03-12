@@ -4,6 +4,7 @@ import com.cybertek.entity.Movie;
 import com.cybertek.enums.MovieState;
 import com.cybertek.enums.MovieType;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
@@ -33,11 +34,29 @@ public interface MovieRepository extends JpaRepository<Movie, Long> {
 
 // ------------------- JPQL QUERIES ------------------- //
 //Write a JPQL query to list all movies between a range of prices
+    @Query("select m from Movie m where m.price BETWEEN ?1 and ?2")
+    List<Movie> fetchAllBetweenPriceRange(BigDecimal price1, BigDecimal price2);
+
 //Write a JPQL query that returns all movie names
+    @Query("select distinct  m.name from Movie m")
+    List<Movie> fetchAllMovieNames ();
+
+
 // ------------------- Native QUERIES ------------------- //
 //Write a native query that returns a movie by name
-//Write a native query that return the list of movies in a specific range of prices
+    @Query(value = "select * from Movie where name = ?1", nativeQuery = true)
+    Optional <Movie> retrieveByName(String name);
+
+    //Write a native query that return the list of movies in a specific range of prices
+    @Query (value = "select * from Movie where price between ?1 and ?2 ", nativeQuery = true)
+    List<Movie> retrieveByPriceRange(BigDecimal price1, BigDecimal price2);
+
 //Write a native query to return all movies where duration exists in the range of duration
+    @Query (value = "select * from movie where duration in ?1", nativeQuery = true)
+    List<Movie> retrieveAllByDurationInRange (List<Integer> durations);
+
 //Write a native query to list the top 5 most expensive movies
+    @Query(value = "select * from Movie order by price desc limit 5", nativeQuery = true)
+    List<Movie> retrieveTopFiveExpensiveMovies();
 
 }
